@@ -1,0 +1,6 @@
+[book]
+authors = ["Gil Mizrahi"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Haskell Performance Tuning Book"

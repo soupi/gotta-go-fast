@@ -1,0 +1,17 @@
+# Summary
+
+- [What makes programs go fast?](./01-gotta_go_fast.md)
+  - [Evaluation in Haskell](./01_02-evaluation.md)
+  - [Allocation and data representation in Haskell](./02_02-allocation.md)
+  - [GHC optimizations and you](./02_03-optimizations.md)
+- [Classifying performance issues](./02-classifications.md)
+- [Finding performance issues using profiling](./03-profiling.md)
+  - [Cost-center profiling](./03-01_cost_center_profiling.md)
+  - [Heap profiling](./03-02_heap_profiling.md)
+- [Automated testing for performance regressions](./04-testing.md)
+- [Case studies](./05-case_studies.md)
+  - [Parsing and processing](./05_01-parsing.md)
+  - [Streaming](./05_02-streaming.md)
+  - [Web service](./05_03-web.md)
+  - [Architecture](./05_04-architecture.md)
+- [Where to go next](./06-next.md)
