@@ -1,9 +1,10 @@
 # Summary
 
+- [About this book](./00-about.md)
 - [What makes programs go fast?](./01-gotta_go_fast.md)
-  - [Evaluation in Haskell](./01_02-evaluation.md)
-  - [Allocation and data representation in Haskell](./02_02-allocation.md)
-  - [GHC optimizations and you](./02_03-optimizations.md)
+  - [Evaluation in Haskell](./01_01-evaluation.md)
+  - [Allocation and data representation in Haskell](./01_02-allocation.md)
+  - [GHC optimizations and you](./01_03-optimizations.md)
 - [Classifying performance issues](./02-classifications.md)
 - [Finding performance issues using profiling](./03-profiling.md)
   - [Cost-center profiling](./03-01_cost_center_profiling.md)
