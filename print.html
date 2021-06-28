@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="01-gotta_go_fast.html"><strong aria-hidden="true">1.</strong> What makes programs go fast?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="01_02-evaluation.html"><strong aria-hidden="true">1.1.</strong> Evaluation in Haskell</a></li><li class="chapter-item expanded "><a href="02_02-allocation.html"><strong aria-hidden="true">1.2.</strong> Allocation and data representation in Haskell</a></li><li class="chapter-item expanded "><a href="02_03-optimizations.html"><strong aria-hidden="true">1.3.</strong> GHC optimizations and you</a></li></ol></li><li class="chapter-item expanded "><a href="02-classifications.html"><strong aria-hidden="true">2.</strong> Classifying performance issues</a></li><li class="chapter-item expanded "><a href="03-profiling.html"><strong aria-hidden="true">3.</strong> Finding performance issues using profiling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="03-01_cost_center_profiling.html"><strong aria-hidden="true">3.1.</strong> Cost-center profiling</a></li><li class="chapter-item expanded "><a href="03-02_heap_profiling.html"><strong aria-hidden="true">3.2.</strong> Heap profiling</a></li></ol></li><li class="chapter-item expanded "><a href="04-testing.html"><strong aria-hidden="true">4.</strong> Automated testing for performance regressions</a></li><li class="chapter-item expanded "><a href="05-case_studies.html"><strong aria-hidden="true">5.</strong> Case studies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="05_01-parsing.html"><strong aria-hidden="true">5.1.</strong> Parsing and processing</a></li><li class="chapter-item expanded "><a href="05_02-streaming.html"><strong aria-hidden="true">5.2.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="05_03-web.html"><strong aria-hidden="true">5.3.</strong> Web service</a></li><li class="chapter-item expanded "><a href="05_04-architecture.html"><strong aria-hidden="true">5.4.</strong> Architecture</a></li></ol></li><li class="chapter-item expanded "><a href="06-next.html"><strong aria-hidden="true">6.</strong> Where to go next</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="00-about.html"><strong aria-hidden="true">1.</strong> About this book</a></li><li class="chapter-item expanded "><a href="01-gotta_go_fast.html"><strong aria-hidden="true">2.</strong> What makes programs go fast?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="01_01-evaluation.html"><strong aria-hidden="true">2.1.</strong> Evaluation in Haskell</a></li><li class="chapter-item expanded "><a href="01_02-allocation.html"><strong aria-hidden="true">2.2.</strong> Allocation and data representation in Haskell</a></li><li class="chapter-item expanded "><a href="01_03-optimizations.html"><strong aria-hidden="true">2.3.</strong> GHC optimizations and you</a></li></ol></li><li class="chapter-item expanded "><a href="02-classifications.html"><strong aria-hidden="true">3.</strong> Classifying performance issues</a></li><li class="chapter-item expanded "><a href="03-profiling.html"><strong aria-hidden="true">4.</strong> Finding performance issues using profiling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="03-01_cost_center_profiling.html"><strong aria-hidden="true">4.1.</strong> Cost-center profiling</a></li><li class="chapter-item expanded "><a href="03-02_heap_profiling.html"><strong aria-hidden="true">4.2.</strong> Heap profiling</a></li></ol></li><li class="chapter-item expanded "><a href="04-testing.html"><strong aria-hidden="true">5.</strong> Automated testing for performance regressions</a></li><li class="chapter-item expanded "><a href="05-case_studies.html"><strong aria-hidden="true">6.</strong> Case studies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="05_01-parsing.html"><strong aria-hidden="true">6.1.</strong> Parsing and processing</a></li><li class="chapter-item expanded "><a href="05_02-streaming.html"><strong aria-hidden="true">6.2.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="05_03-web.html"><strong aria-hidden="true">6.3.</strong> Web service</a></li><li class="chapter-item expanded "><a href="05_04-architecture.html"><strong aria-hidden="true">6.4.</strong> Architecture</a></li></ol></li><li class="chapter-item expanded "><a href="06-next.html"><strong aria-hidden="true">7.</strong> Where to go next</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -144,16 +144,42 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="what-makes-programs-go-fast"><a class="header" href="#what-makes-programs-go-fast">What makes programs go fast?</a></h1>
+                        <h1 id="about-this-book"><a class="header" href="#about-this-book">About this book</a></h1>
+<p>This book is a community-driven effort to provide a document describing
+how to write idiomatically fast Haskell by providing insight into how
+Haskell behaves under the hood, describing various techniques and tools
+used to identify performance issues, categorizing common performance
+issues, and demonstrate how to tackle performance problems step-by-step
+using case studies.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="what-makes-programs-go-fast"><a class="header" href="#what-makes-programs-go-fast">What makes programs go fast?</a></h1>
+<p>In this chapter we'll explore how Haskell behaves under the hood.</p>
+<p>We'll take a look at Haskell's evaluation semantics,
+laziness/strictness and how to control it, how to represent
+data wrt performance, allocation and its affect on performance,
+how various GHC affect performance, and more.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="evaluation-in-haskell"><a class="header" href="#evaluation-in-haskell">Evaluation in Haskell</a></h1>
+<p>In this section we'll take a look at Haskell's evaluation semantics,
+laziness, strictness and how they affect performance, and what
+to avoid.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="allocation-and-data-representation-in-haskell"><a class="header" href="#allocation-and-data-representation-in-haskell">Allocation and data representation in Haskell</a></h1>
+<p>In this section we'll explore how allocation affects the performance
+of programs, and how to keep it under control.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ghc-optimizations-and-you"><a class="header" href="#ghc-optimizations-and-you">GHC optimizations and you</a></h1>
+<p>In this section we'll explore a few optimizations GHC provides
+that a Haskell programmer should be aware of, and how they affect
+the code we write.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="classifying-performance-issues"><a class="header" href="#classifying-performance-issues">Classifying performance issues</a></h1>
+<p>In this chapter we'll try to classify a few common performance problems
+in Haskell applications and give tips on how to avoid them.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="finding-performance-issues-using-profiling"><a class="header" href="#finding-performance-issues-using-profiling">Finding performance issues using profiling</a></h1>
+<p>In this chapter we'll explore various tools and techniques currently
+available to us in order to identify the causes of performance problems.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="cost-center-profiling"><a class="header" href="#cost-center-profiling">Cost-center profiling</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="heap-profiling"><a class="header" href="#heap-profiling">Heap profiling</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="automated-testing-for-performance-regressions"><a class="header" href="#automated-testing-for-performance-regressions">Automated testing for performance regressions</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="case-studies"><a class="header" href="#case-studies">Case studies</a></h1>
+<p>In the chapter we'll show how to tackle performance issues step-by-step
+by exploring case studies.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="parsing-and-processing"><a class="header" href="#parsing-and-processing">Parsing and processing</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="streaming"><a class="header" href="#streaming">Streaming</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="web-service"><a class="header" href="#web-service">Web service</a></h1>
