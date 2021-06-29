@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>About this book - Haskell Performance Tuning Book</title>
+        <title>Our toolbox - Haskell Performance Tuning Book</title>
                 
 
         <!-- Custom HTML head -->
@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="00-about.html"><strong aria-hidden="true">1.</strong> About this book</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="00_01-tools.html"><strong aria-hidden="true">1.1.</strong> Our toolbox</a></li></ol></li><li class="chapter-item expanded "><a href="01-gotta_go_fast.html"><strong aria-hidden="true">2.</strong> What makes programs go fast?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="01_01-evaluation.html"><strong aria-hidden="true">2.1.</strong> Evaluation in Haskell</a></li><li class="chapter-item expanded "><a href="01_02-allocation.html"><strong aria-hidden="true">2.2.</strong> Allocation and data representation in Haskell</a></li><li class="chapter-item expanded "><a href="01_03-optimizations.html"><strong aria-hidden="true">2.3.</strong> GHC optimizations</a></li></ol></li><li class="chapter-item expanded "><a href="02-classifications.html"><strong aria-hidden="true">3.</strong> Classifying performance issues</a></li><li class="chapter-item expanded "><a href="03-profiling.html"><strong aria-hidden="true">4.</strong> Finding performance issues using profiling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="03-01_cost_center_profiling.html"><strong aria-hidden="true">4.1.</strong> Cost-center profiling</a></li><li class="chapter-item expanded "><a href="03-02_heap_profiling.html"><strong aria-hidden="true">4.2.</strong> Heap profiling</a></li></ol></li><li class="chapter-item expanded "><a href="04-testing.html"><strong aria-hidden="true">5.</strong> Automated testing for performance regressions</a></li><li class="chapter-item expanded "><a href="05-case_studies.html"><strong aria-hidden="true">6.</strong> Case studies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="05_01-parsing.html"><strong aria-hidden="true">6.1.</strong> Parsing and processing</a></li><li class="chapter-item expanded "><a href="05_02-streaming.html"><strong aria-hidden="true">6.2.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="05_03-web.html"><strong aria-hidden="true">6.3.</strong> Web service</a></li><li class="chapter-item expanded "><a href="05_04-architecture.html"><strong aria-hidden="true">6.4.</strong> Architecture</a></li></ol></li><li class="chapter-item expanded "><a href="06-next.html"><strong aria-hidden="true">7.</strong> Where to go next</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="00-about.html"><strong aria-hidden="true">1.</strong> About this book</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="00_01-tools.html" class="active"><strong aria-hidden="true">1.1.</strong> Our toolbox</a></li></ol></li><li class="chapter-item expanded "><a href="01-gotta_go_fast.html"><strong aria-hidden="true">2.</strong> What makes programs go fast?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="01_01-evaluation.html"><strong aria-hidden="true">2.1.</strong> Evaluation in Haskell</a></li><li class="chapter-item expanded "><a href="01_02-allocation.html"><strong aria-hidden="true">2.2.</strong> Allocation and data representation in Haskell</a></li><li class="chapter-item expanded "><a href="01_03-optimizations.html"><strong aria-hidden="true">2.3.</strong> GHC optimizations</a></li></ol></li><li class="chapter-item expanded "><a href="02-classifications.html"><strong aria-hidden="true">3.</strong> Classifying performance issues</a></li><li class="chapter-item expanded "><a href="03-profiling.html"><strong aria-hidden="true">4.</strong> Finding performance issues using profiling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="03-01_cost_center_profiling.html"><strong aria-hidden="true">4.1.</strong> Cost-center profiling</a></li><li class="chapter-item expanded "><a href="03-02_heap_profiling.html"><strong aria-hidden="true">4.2.</strong> Heap profiling</a></li></ol></li><li class="chapter-item expanded "><a href="04-testing.html"><strong aria-hidden="true">5.</strong> Automated testing for performance regressions</a></li><li class="chapter-item expanded "><a href="05-case_studies.html"><strong aria-hidden="true">6.</strong> Case studies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="05_01-parsing.html"><strong aria-hidden="true">6.1.</strong> Parsing and processing</a></li><li class="chapter-item expanded "><a href="05_02-streaming.html"><strong aria-hidden="true">6.2.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="05_03-web.html"><strong aria-hidden="true">6.3.</strong> Web service</a></li><li class="chapter-item expanded "><a href="05_04-architecture.html"><strong aria-hidden="true">6.4.</strong> Architecture</a></li></ol></li><li class="chapter-item expanded "><a href="06-next.html"><strong aria-hidden="true">7.</strong> Where to go next</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -143,20 +143,37 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="about-this-book"><a class="header" href="#about-this-book">About this book</a></h1>
-<p>This book is a community-driven effort to provide a document describing
-how to write <em>idiomatically fast Haskell</em> by providing insight into how
-Haskell behaves under the hood, describing various techniques and tools
-used to identify performance issues, categorizing common performance
-issues, and demonstrate how to tackle performance problems step-by-step
-using case studies.</p>
+                        <h1 id="our-toolbox"><a class="header" href="#our-toolbox">Our toolbox</a></h1>
+<p>In this section we'll list the tools we will use throughout the book, give a short description of them and where to get them.</p>
+<h2 id="a-hrefhttpsdownloadshaskellorgghclatestdocshtmlusers_guideprofilinghtmlghca"><a class="header" href="#a-hrefhttpsdownloadshaskellorgghclatestdocshtmlusers_guideprofilinghtmlghca"><a href="https://downloads.haskell.org/ghc/latest/docs/html/users_guide/profiling.html">GHC</a></a></h2>
+<p>GHC comes with a time and space profiling system. The output of that system is used by other tools to provide further insight than what GHC offers by default.</p>
+<h2 id="a-hrefhttpshackagehaskellorgpackageprofiteurprofiteura"><a class="header" href="#a-hrefhttpshackagehaskellorgpackageprofiteurprofiteura"><a href="https://hackage.haskell.org/package/profiteur">profiteur</a></a></h2>
+<p>An interactive treemap visualiser for GHC <code>.prof</code> files.</p>
+<figure>
+  <img src="https://raw.githubusercontent.com/jaspervdj/profiteur/master/example/screenshot.png" alt="profiteur" style="width:90%">
+  <figcaption style="text-align: center; width: 90%">Profiteur example</figcaption>
+</figure>
+<h2 id="a-hrefhttpshackagehaskellorgpackageprofiteroleprofiterolea"><a class="header" href="#a-hrefhttpshackagehaskellorgpackageprofiteroleprofiterolea"><a href="https://hackage.haskell.org/package/profiterole">profiterole</a></a></h2>
+<p>Alternative textual views of the profiling data generated by GHC.</p>
+<h2 id="a-hrefhttpsdownloadshaskellorgghclatestdocshtmlusers_guideprofilinghtmlhp2pshp2psa"><a class="header" href="#a-hrefhttpsdownloadshaskellorgghclatestdocshtmlusers_guideprofilinghtmlhp2pshp2psa"><a href="https://downloads.haskell.org/ghc/latest/docs/html/users_guide/profiling.html#hp2ps">hp2ps</a></a></h2>
+<p>A tool used to convert a <code>.hp</code> file produced by GHC into a PostScript graph of heap profile. This tool is bundled with GHC.</p>
+<h2 id="a-hrefhttpsmpickeringgithubioeventlog2htmleventlog2htmla"><a class="header" href="#a-hrefhttpsmpickeringgithubioeventlog2htmleventlog2htmla"><a href="https://mpickering.github.io/eventlog2html">eventlog2html</a></a></h2>
+<p>A tool to visualise eventlogs. In particular, it creates interactive charts for the heap profiling information included in the eventlog.</p>
+<iframe src="https://mpickering.github.io/eventlog2html/examples/eventlog2html.eventlog.html" width="90%" height="400px"></iframe>
+<h2 id="a-hrefhttpsgitlabhaskellorgghcghc-debugghc-debuga"><a class="header" href="#a-hrefhttpsgitlabhaskellorgghcghc-debugghc-debuga"><a href="https://gitlab.haskell.org/ghc/ghc-debug">ghc-debug</a></a></h2>
+<p>A set of libraries which allow you to inspect the heap of a running Haskell program from an external debugger.</p>
+<h2 id="a-hrefhttpshackagehaskellorgpackageghc-events-analyzeghc-event-analyzea"><a class="header" href="#a-hrefhttpshackagehaskellorgpackageghc-events-analyzeghc-event-analyzea"><a href="https://hackage.haskell.org/package/ghc-events-analyze">ghc-event-analyze</a></a></h2>
+<p>A profile tool that uses GHC's eventlog system. It is useful for profiling code when GHC's normal profiling mode is not available, or when using profiling mode would perturb the code too much. It is also useful when you want time-profiling information with a breakdown over time rather than totals for the whole run.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="00-about.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
                         
-                                                    <a rel="next" href="00_01-tools.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="01-gotta_go_fast.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -166,8 +183,11 @@ using case studies.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="00-about.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
                 
-                                    <a rel="next" href="00_01-tools.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="01-gotta_go_fast.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                             </nav>
