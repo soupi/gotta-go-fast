@@ -17,3 +17,7 @@
   - [Web service](./06-case_studies/03-web.md)
   - [Architecture](./06-case_studies/04-architecture.md)
 - [Where to go next](./07-conclusion/00-next.md)
+
+-----------
+
+[Contributors](./contributors.md)
