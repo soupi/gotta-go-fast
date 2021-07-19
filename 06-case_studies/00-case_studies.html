@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Automated testing for performance regressions - Haskell Performance Tuning Book</title>
+        <title>Case studies - Haskell Performance Tuning Book</title>
                 
 
         <!-- Custom HTML head -->
@@ -14,21 +14,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-                <link rel="icon" href="favicon.svg">
-                        <link rel="shortcut icon" href="favicon.png">
-                <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-                <link rel="stylesheet" href="css/print.css" media="print">
+                <link rel="icon" href="../favicon.svg">
+                        <link rel="shortcut icon" href="../favicon.png">
+                <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+                <link rel="stylesheet" href="../css/print.css" media="print">
         
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-                <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../fonts/fonts.css">
         
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
         
@@ -36,7 +36,7 @@
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="00-about.html"><strong aria-hidden="true">1.</strong> About this book</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="00_01-tools.html"><strong aria-hidden="true">1.1.</strong> Our toolbox</a></li></ol></li><li class="chapter-item expanded "><a href="01-gotta_go_fast.html"><strong aria-hidden="true">2.</strong> What makes programs go fast?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="01_01-evaluation.html"><strong aria-hidden="true">2.1.</strong> Evaluation in Haskell</a></li><li class="chapter-item expanded "><a href="01_02-allocation.html"><strong aria-hidden="true">2.2.</strong> Allocation and data representation in Haskell</a></li><li class="chapter-item expanded "><a href="01_03-optimizations.html"><strong aria-hidden="true">2.3.</strong> GHC optimizations</a></li></ol></li><li class="chapter-item expanded "><a href="02-classifications.html"><strong aria-hidden="true">3.</strong> Classifying performance issues</a></li><li class="chapter-item expanded "><a href="03-profiling.html"><strong aria-hidden="true">4.</strong> Finding performance issues using profiling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="03-01_cost_center_profiling.html"><strong aria-hidden="true">4.1.</strong> Cost-center profiling</a></li><li class="chapter-item expanded "><a href="03-02_heap_profiling.html"><strong aria-hidden="true">4.2.</strong> Heap profiling</a></li></ol></li><li class="chapter-item expanded "><a href="04-testing.html" class="active"><strong aria-hidden="true">5.</strong> Automated testing for performance regressions</a></li><li class="chapter-item expanded "><a href="05-case_studies.html"><strong aria-hidden="true">6.</strong> Case studies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="05_01-parsing.html"><strong aria-hidden="true">6.1.</strong> Parsing and processing</a></li><li class="chapter-item expanded "><a href="05_02-streaming.html"><strong aria-hidden="true">6.2.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="05_03-web.html"><strong aria-hidden="true">6.3.</strong> Web service</a></li><li class="chapter-item expanded "><a href="05_04-architecture.html"><strong aria-hidden="true">6.4.</strong> Architecture</a></li></ol></li><li class="chapter-item expanded "><a href="06-next.html"><strong aria-hidden="true">7.</strong> Where to go next</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../01-about/00-about.html"><strong aria-hidden="true">1.</strong> About this book</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../01-about/01-tools.html"><strong aria-hidden="true">1.1.</strong> Our toolbox</a></li></ol></li><li class="chapter-item expanded "><a href="../02-gotta_go_fast/00-gotta_go_fast.html"><strong aria-hidden="true">2.</strong> What makes programs go fast?</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../02-gotta_go_fast/01-evaluation.html"><strong aria-hidden="true">2.1.</strong> Evaluation in Haskell</a></li><li class="chapter-item expanded "><a href="../02-gotta_go_fast/02-allocation.html"><strong aria-hidden="true">2.2.</strong> Allocation and data representation in Haskell</a></li><li class="chapter-item expanded "><a href="../02-gotta_go_fast/03-optimizations.html"><strong aria-hidden="true">2.3.</strong> GHC optimizations</a></li></ol></li><li class="chapter-item expanded "><a href="../03-classifications/00-classifications.html"><strong aria-hidden="true">3.</strong> Classifying performance issues</a></li><li class="chapter-item expanded "><a href="../04-finding_issues/00-profiling.html"><strong aria-hidden="true">4.</strong> Finding performance issues using profiling</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../04-finding_issues/01-cost_center_profiling.html"><strong aria-hidden="true">4.1.</strong> Cost-center profiling</a></li><li class="chapter-item expanded "><a href="../04-finding_issues/02-heap_profiling.html"><strong aria-hidden="true">4.2.</strong> Heap profiling</a></li></ol></li><li class="chapter-item expanded "><a href="../05-testing/00-testing.html"><strong aria-hidden="true">5.</strong> Automated testing for performance regressions</a></li><li class="chapter-item expanded "><a href="../06-case_studies/00-case_studies.html" class="active"><strong aria-hidden="true">6.</strong> Case studies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../06-case_studies/01-parsing.html"><strong aria-hidden="true">6.1.</strong> Parsing and processing</a></li><li class="chapter-item expanded "><a href="../06-case_studies/02-streaming.html"><strong aria-hidden="true">6.2.</strong> Streaming</a></li><li class="chapter-item expanded "><a href="../06-case_studies/03-web.html"><strong aria-hidden="true">6.3.</strong> Web service</a></li><li class="chapter-item expanded "><a href="../06-case_studies/04-architecture.html"><strong aria-hidden="true">6.4.</strong> Architecture</a></li></ol></li><li class="chapter-item expanded "><a href="../07-conclusion/00-next.html"><strong aria-hidden="true">7.</strong> Where to go next</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../contributors.html">Contributors</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -114,7 +114,7 @@
                     <h1 class="menu-title">Haskell Performance Tuning Book</h1>
 
                     <div class="right-buttons">
-                                                <a href="print.html" title="Print this book" aria-label="Print this book">
+                                                <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                                                                         
@@ -143,17 +143,19 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="automated-testing-for-performance-regressions"><a class="header" href="#automated-testing-for-performance-regressions">Automated testing for performance regressions</a></h1>
+                        <h1 id="case-studies"><a class="header" href="#case-studies">Case studies</a></h1>
+<p>In the chapter we'll show how to tackle performance issues step-by-step
+by exploring case studies.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                                                    <a rel="prev" href="03-02_heap_profiling.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="../05-testing/00-testing.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
-                                                    <a rel="next" href="05-case_studies.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="../06-case_studies/01-parsing.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -163,11 +165,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                                    <a rel="prev" href="03-02_heap_profiling.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="../05-testing/00-testing.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
-                                    <a rel="next" href="05-case_studies.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="../06-case_studies/01-parsing.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                             </nav>
@@ -182,13 +184,13 @@
         </script>
         
         
-                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+                <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
         
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         
